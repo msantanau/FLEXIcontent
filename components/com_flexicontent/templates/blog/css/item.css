@@ -1,0 +1,80 @@
+/* Blog Template */
+.iteminfo .createdline {
+	font-family:tahoma;
+	font-size:9px;
+	display:block;
+}
+.iteminfo .createdby {
+	font-size:9px;
+	font-weight:normal;
+}
+.iteminfo .created {
+	font-size:9px;
+	font-weight:bold;
+}
+
+.iteminfo .modifiedline {
+	font-family:tahoma;
+	font-size:9px;
+	display:block;
+}
+.iteminfo .modifiedby {
+	font-size:9px;
+	font-weight:normal;
+}
+.iteminfo .modified {
+	font-size:9px;
+	font-weight:bold;
+}
+
+.itemactions, .iteminfo, .itemadditionnal, .description {
+	margin: 0 0 1em;
+}
+.iteminfo {
+	margin: 0 0 0.4em;
+}
+.description {
+	clear: both;
+}
+.itemactions span {
+	margin: 0 0 0.5em;
+}
+.itemactions .voting {
+	margin-right: 6px;
+	float: left;
+}
+.itemactions .favourites {
+}
+
+.itemadditionnal span {
+	margin: 0 0 0.3em;
+}
+.itemadditionnal .categories {
+	display: block;
+}
+.itemadditionnal .tags {
+	display: block;
+}
+
+.fcvalue {
+	padding-left: 5px;
+}
+
+.fclabel {
+	font-weight:bold;
+}
+.customblock {
+	padding: 1%;
+	border: 1px solid #dddddd;
+	display:block;
+	float:left;
+	width:98%;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+.customblock .element {
+	display:block;
+	float:left;
+	margin-right: 20px;
+}

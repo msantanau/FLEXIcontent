@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="flexicontent_fields" method="upgrade">
+	<name>FLEXIcontent - Minigallery</name>
+	<author>Emmanuel Danan</author>
+	<creationDate>June 2009</creationDate>
+	<copyright>Copyright (C) 2009 Emmanuel Danan</copyright>
+	<license>GNU/GPL v2</license>
+	<authorEmail>emmanuel@vistamedia.fr</authorEmail>
+	<authorUrl>www.vistamedia.fr</authorUrl>
+	<version>1.0</version>
+	<description>FLEXI_FIELD_MINIGALLERY</description>
+	<files>
+		<filename plugin="minigallery">minigallery.php</filename>
+		<folder plugin="minigallery">css</folder>
+		<folder plugin="minigallery">js</folder>
+	</files>
+	<config>
+	<fields name="attribs">
+		<fieldset name="basic">
+			<field name="display_label" type="radio" default="1" label="FLEXI_FIELD_DISPLAY_LABEL" description="FLEXI_FIELD_DISPLAY_LABEL_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+		</fieldset>
+		<fieldset name="group-minigallery">
+			<field name="thumbposition" type="list" default="3" label="FLEXI_FIELD_GALLERY_THUMBS_POSITION" description="FLEXI_FIELD_GALLERY_THUMBS_POSITION_DESC">
+				<option value="1">FLEXI_FIELD_GALLERY_TOP</option>
+				<option value="2">FLEXI_FIELD_GALLERY_LEFT</option>
+				<option value="3">FLEXI_FIELD_GALLERY_BOTTOM</option>
+				<option value="4">FLEXI_FIELD_GALLERY_RIGHT</option>
+			</field>
+			<field name="w_l" type="text" default="450" size="4" label="FLEXI_FIELD_GALLERY_WIDTH_LARGE" description="FLEXI_FIELD_GALLERY_WIDTH_LARGE_DESC" />
+			<field name="h_l" type="text" default="300" size="4" label="FLEXI_FIELD_GALLERY_HEIGHT_LARGE" description="FLEXI_FIELD_GALLERY_HEIGHT_LARGE_DESC" />
+			<field name="w_s" type="text" default="100" size="4" label="FLEXI_FIELD_GALLERY_WIDTH_MINI" description="FLEXI_FIELD_GALLERY_WIDTH_MINI_DESC" />
+			<field name="h_s" type="text" default="66" size="4" label="FLEXI_FIELD_GALLERY_HEIGHT_MINI" description="FLEXI_FIELD_GALLERY_HEIGHT_MINI_DESC" />
+ 			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="@spacer" type="spacer" default="" label="FLEXI_FIELD_GALLERY_SLIDESHOW" description="FLEXI_FIELD_GALLERY_SLIDESHOW_DESC" />
+			<field name="delay" type="text" default="4000" size="4" label="FLEXI_FIELD_GALLERY_WAIT" description="FLEXI_FIELD_GALLERY_WAIT_DESC" />
+			<field name="duration" type="text" default="1000" size="4" label="FLEXI_FIELD_GALLERY_DURATION" description="FLEXI_FIELD_GALLERY_DURATION_DESC" />
+			<field name="usecaptions" type="radio" default="1" label="Use captions" description="Use captions">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+				<option value="2">Use custom captions</option>
+			</field>
+			<field name="customcaptions" type="text" default="This is a caption" label="Custom captions" description="Custom captions" />
+			<field name="slideshowtype" type="list" default="slideshow" label="Slide show type" description="Slide show type">
+				<option value="slideshow">Slideshow</option>
+				<option value="Flash">Flash</option>
+				<option value="Fold">Fold</option>
+				<option value="KenBurns">KenBurns</option>
+				<option value="Push">Push</option>
+			</field>
+			<field name="transition" type="list" default="back" label="Transition" description="Transition">
+				<option value="back">back</option>
+				<option value="elastic">elastic</option>
+				<option value="bounce">bounce</option>
+			</field>
+			<field name="t_dir" type="list" default="in" label="Transition direction" description="Transition direction">
+				<option value="in">in</option>
+				<option value="out">out</option>
+				<option value="in:out">in:out</option>
+				<option value="out:in">out:in</option>
+			</field>
+			<field name="thumbnails" type="list" default="1" label="Thumbnails" description="Thumbnails">
+				<option value="1">true</option>
+				<option value="0">false</option>
+			</field>
+			<field name="controller" type="list" default="1" label="Controller" description="Controller">
+				<option value="1">true</option>
+				<option value="0">false</option>
+			</field>
+			<field name="otheroptions" type="textarea" default="" cols="40" rows="10" label="Other options" description="Other options. Example: color: ['tomato', 'palegreen', 'orangered', 'aquamarine'], overlap: false">
+				<option value="1">true</option>
+				<option value="0">false</option>
+			</field>
+		</fieldset>
+	</fields>
+	</config>
+	<languages>
+		<language tag="en-GB">en-GB.plg_flexicontent_fields_minigallery.ini</language>
+		<language tag="fr-FR">fr-FR.plg_flexicontent_fields_minigallery.ini</language>
+		<language tag="de-DE">de-DE.plg_flexicontent_fields_minigallery.ini</language>
+		<language tag="ru-RU">ru-RU.plg_flexicontent_fields_minigallery.ini</language>
+	</languages>
+</install>
